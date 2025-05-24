@@ -8,8 +8,7 @@ class NoteCompiler < Formula
   depends_on "yq"
 
   def install
-    # The tarball extracts to a directory like 'obsidian-tools-0.1.0'.
-    # 'note-compiler.sh' is expected to be at the root of that directory.
+    inreplace "note-compiler.sh", "DEVELOPMENT_VERSION_#_NEEDS_REPLACEMENT_BY_BUILD_#", version.to_s
     bin.install "note-compiler.sh" => "note-compiler"
   end
 
