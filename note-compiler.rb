@@ -13,6 +13,7 @@ class NoteCompiler < Formula
   end
 
   test do
-    assert_match "Usage", shell_output("#{bin}/note-compiler 2>&1", 1)
+    # Check for semantic version output
+    assert_match(/^\d+\.\d+\.\d+$/, shell_output("#{bin}/note-compiler --version"))
   end
 end
