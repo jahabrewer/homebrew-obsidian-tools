@@ -8,7 +8,7 @@ class NoteCompiler < Formula
   depends_on "yq"
 
   def install
-    inreplace "note-compiler.sh", "DEVELOPMENT_VERSION_#_NEEDS_REPLACEMENT_BY_BUILD_#", version.to_s
+    inreplace "note-compiler.sh", "__SCRIPT_VERSION__=\"DEVELOPMENT_VERSION_#_NEEDS_REPLACEMENT_BY_BUILD_#\"", "__SCRIPT_VERSION__=\"#{version}\""
     bin.install "note-compiler.sh" => "note-compiler"
   end
 
