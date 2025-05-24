@@ -1,5 +1,3 @@
-# Documentation: https://docs.brew.sh/Formula-Cookbook
-#                https://rubydoc.brew.sh/Formula
 class NoteCompiler < Formula
   desc "Compiles notes from an Obsidian vault into one text file"
   homepage "https://github.com/jahabrewer/obsidian-tools"
@@ -17,6 +15,6 @@ class NoteCompiler < Formula
 
   test do
     # Assumes script prints "Usage" and exits 1 if no args are given.
-    assert_match "Usage", shell_output("#{bin}/note-compiler", 1)
+    assert_match "Usage", shell_output(bin/"note-compiler", 1)
   end
 end
