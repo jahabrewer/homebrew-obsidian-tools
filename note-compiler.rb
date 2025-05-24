@@ -14,7 +14,6 @@ class NoteCompiler < Formula
   end
 
   test do
-    # Assumes script prints "Usage" and exits 1 if no args are given.
-    assert_match "Usage", shell_output(bin/"note-compiler 2&>1", 1)
+    assert_match "Usage", shell_output("#{bin}/note-compiler 2>&1", 1)
   end
 end
