@@ -10,6 +10,9 @@ class NoteCompiler < Formula
   def install
     inreplace "note-compiler.sh", "__SCRIPT_VERSION__=\"DEVELOPMENT_VERSION_#_NEEDS_REPLACEMENT_BY_BUILD_#\"", "__SCRIPT_VERSION__=\"#{version}\""
     bin.install "note-compiler.sh" => "note-compiler"
+    
+    # Install zsh completions
+    zsh_completion.install "_note-compiler"
   end
 
   test do
