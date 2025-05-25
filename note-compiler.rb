@@ -1,8 +1,8 @@
 class NoteCompiler < Formula
   desc "Compiles notes from an Obsidian vault into one text file"
   homepage "https://github.com/jahabrewer/obsidian-tools"
-  url "https://github.com/jahabrewer/obsidian-tools/archive/refs/tags/v0.5.0.tar.gz"
-  sha256 "5403363cf24ec41334cb103bbf4907a981c4d9f9d9d9d515f50626f4fcafe1a4"
+  url "https://github.com/jahabrewer/obsidian-tools/archive/refs/tags/v0.5.0-test.1.tar.gz"
+  sha256 "8fb9498ac3ceb73a82afb89869bafb37d51368290684e6ba7437176f9f72ade4"
   license "GPL-3.0-only"
 
   depends_on "yq"
