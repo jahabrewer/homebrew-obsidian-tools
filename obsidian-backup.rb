@@ -4,7 +4,7 @@ class ObsidianBackup < Formula
   desc "Backs up an Obsidian vault" # Placeholder, please verify/update
   homepage "https://github.com/jahabrewer/obsidian-tools"
   url "https://github.com/jahabrewer/obsidian-tools/archive/refs/tags/v1.0.0.tar.gz"
-  sha256 "e5a40d9369d8be8665b992fb453cbf31eeb98f96a64f86486ca319884a2291ad"
+  sha256 "b0fffdd82c675fd8e13a9b474df1d154e72512e12c537c9ba87c9d2ebc686661"
   license "GPL-3.0-only"
 
   depends_on "yq" # Assuming this script also needs yq, please verify
