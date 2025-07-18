@@ -5,13 +5,13 @@
 class NoteCompiler < Formula
   desc "A cross-platform Go CLI tool for compiling markdown notes"
   homepage "https://github.com/jahabrewer/note-compiler"
-  version "1.1.0"
+  version "1.2.0"
   license "GPL-3.0"
 
   on_macos do
     on_intel do
-      url "https://github.com/jahabrewer/note-compiler/releases/download/v1.1.0/obsidian-tools_Darwin_x86_64.tar.gz"
-      sha256 "2d9e18813691e5bc6aee98de6a0aaa9cb4d320bcfdbb89483c59f07389191e77"
+      url "https://github.com/jahabrewer/note-compiler/releases/download/v1.2.0/obsidian-tools_Darwin_x86_64.tar.gz"
+      sha256 "a03c6b9c7c8baaa2d420a13050f717c62121720defc8c4f6b9922ad8dc17f3fc"
 
       def install
         bin.install "note-compiler"
@@ -28,8 +28,8 @@ class NoteCompiler < Formula
       end
     end
     on_arm do
-      url "https://github.com/jahabrewer/note-compiler/releases/download/v1.1.0/obsidian-tools_Darwin_arm64.tar.gz"
-      sha256 "b4c72bd3d49fcdb53755a0e9bd1cddfa807d851c6eba34b4bc62e4d27de5efb8"
+      url "https://github.com/jahabrewer/note-compiler/releases/download/v1.2.0/obsidian-tools_Darwin_arm64.tar.gz"
+      sha256 "ebd614de151bab80c8bf55c3dc2e3aff3e827a8a88275b9a62882dc51033ea5a"
 
       def install
         bin.install "note-compiler"
@@ -50,8 +50,8 @@ class NoteCompiler < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahabrewer/note-compiler/releases/download/v1.1.0/obsidian-tools_Linux_x86_64.tar.gz"
-        sha256 "95c6d52852f3e5e9f3fc17408f00dc55ac98ee59bd45f1aa19dedb54db6ecf6e"
+        url "https://github.com/jahabrewer/note-compiler/releases/download/v1.2.0/obsidian-tools_Linux_x86_64.tar.gz"
+        sha256 "ab13bf6c87da4e3e9196ae277c6c3e586af103d7c8be1aed0795db26ee8e0721"
 
         def install
           bin.install "note-compiler"
@@ -70,8 +70,8 @@ class NoteCompiler < Formula
     end
     on_arm do
       if !Hardware::CPU.is_64_bit?
-        url "https://github.com/jahabrewer/note-compiler/releases/download/v1.1.0/obsidian-tools_Linux_armv6.tar.gz"
-        sha256 "abf777725ed3e7402bce17cdc270193092efdd7fb3143c8ee4402b51cb47fd60"
+        url "https://github.com/jahabrewer/note-compiler/releases/download/v1.2.0/obsidian-tools_Linux_armv6.tar.gz"
+        sha256 "05efb1ab7e37cb1bcc128af6d41f0ec673375478fee146a5c3cd7bff2c69cf60"
 
         def install
           bin.install "note-compiler"
@@ -90,8 +90,8 @@ class NoteCompiler < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/jahabrewer/note-compiler/releases/download/v1.1.0/obsidian-tools_Linux_arm64.tar.gz"
-        sha256 "f5511f9a8125cfa3a3a8712f58395e7c20f13af59452a8de530b325a3a5845d1"
+        url "https://github.com/jahabrewer/note-compiler/releases/download/v1.2.0/obsidian-tools_Linux_arm64.tar.gz"
+        sha256 "c9cee6c2def7d3b9e53ca508fcd63aee43cea3ac0ce3068ade5ed7867b6f88d4"
 
         def install
           bin.install "note-compiler"
